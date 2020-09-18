@@ -96,9 +96,5 @@ def KillerQueen(_, msg):
  
     app.send_message(chat, "Сюда смотри!")
 
-@app.on_message(filters.command("Sheer-heart-attack", prefixes=".") & filters.me)
-def sheer(_, msg):
-	
-
 app.run()
 
