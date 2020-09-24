@@ -16,7 +16,8 @@ nano config.ini
 (Потом, в параметрах "api_id" и "api_hash" вводите id и hash своего telegram. Дабы получить их вы можете через сайт https://my.telegram.org/auth регистрируйтесь, выбирайте параметр "API development tools" и создовайте обсолютно рандомное "приложение" с обсолютно рандомными характеристиками. Заходим в него и получаем "
 
 App api_id: 121313131
-App api_hash: xxxxxxxxxxx" 
+App api_hash: "xxxxxxxxxxx" 
+
 
 Далее, вставлете значения подпунктов "App api_id" и "App api_hash" в congig.ini. Сохраняете это дела сочитанием "ctrl + s" и выходите из "nano" командой "ctrl + x")
 
