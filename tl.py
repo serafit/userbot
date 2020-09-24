@@ -96,5 +96,19 @@ def KillerQueen(_, msg):
  
     app.send_message(chat, "Сюда смотри!")
 
+  # Фильтрация даты 
+
+def dynamic_data_filter(data, query):
+    return filters.create(
+        lambda flt, _, query: flt.data == query.data,
+        data=data  # "data" kwarg is accessed with "flt.data" above
+    )
+
+async def func(flt, _, query):
+    return flt.data == query.data
+    
+    # "data" kwarg is accessed with "flt.data" above
+    return filters.create(func, data=data)
+
 app.run()
 
